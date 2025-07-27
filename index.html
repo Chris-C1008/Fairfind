@@ -1,49 +1,112 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FairFind — Coming Soon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: radial-gradient(circle at center, #0f0f0f, #000000);
-            color: #f2f2f2;
-            font-family: 'Roboto Mono', monospace;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 0.5em;
-            letter-spacing: 2px;
-        }
-
-        p {
-            font-size: 1.1rem;
-            max-width: 500px;
-            opacity: 0.85;
-        }
-
-        .tease {
-            font-style: italic;
-            margin-top: 2em;
-            font-size: 0.9rem;
-            color: #aaaaaa;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FairFind – Coming Soon</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'UKNumberPlate';
+      src: url('assets/UKNumberPlate.ttf') format('truetype');
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header img {
+      max-width: 180px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      color: #444;
+      margin: 30px 0 10px;
+    }
+    p {
+      max-width: 700px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+    .plate-sample {
+      font-family: 'UKNumberPlate', monospace;
+      font-size: 2rem;
+      background: #fff;
+      border: 2px solid #000;
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 6px;
+      margin: 20px 0;
+    }
+    .progress-bar {
+      width: 80%;
+      margin: 0 auto;
+      background: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 10px;
+    }
+    .progress-bar-fill {
+      height: 20px;
+      background: #007B55;
+      width: 50%;
+      color: #fff;
+      line-height: 20px;
+    }
+    input[type="email"] {
+      padding: 10px;
+      width: 260px;
+      max-width: 90%;
+      border: 1px solid #aaa;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 16px;
+      border: none;
+      background-color: #000;
+      color: #fff;
+      margin-left: 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-    <h1>FairFind</h1>
-    <p>Something is coming. Something to change the way you look at cars forever.</p>
-    <p class="tease">Check back soon. Or don’t. But you’ll wish you had.</p>
+  <header>
+    <img src="assets/fairfind-logo.png" alt="FairFind Logo" />
+    <h1>Smarter Vehicle Checks Are Coming</h1>
+    <p>FairFind helps you verify vehicle information and avoid scams before buying or selling. Get confidence in every number plate lookup and make informed decisions in private car transactions.</p>
+  </header>
+
+  <section>
+    <h2>What Is FairFind?</h2>
+    <p>We're building a modern vehicle verification tool that gives you the facts, fast</p>
+    <div class="plate-sample">FA11 FND</div>
+  </section>
+
+  <section>
+    <h2>Progress</h2>
+    <p>We're halfway there. Development is underway, and we'll be live soon!</p>
+    <div class="progress-bar">
+      <div class="progress-bar-fill">50%</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 FairFind. All rights reserved.</p>
+  </footer>
 </body>
 </html>
